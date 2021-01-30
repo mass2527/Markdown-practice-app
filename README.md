@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+# `Let's learn Markdown`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `What is Markdown?`
 
-## Available Scripts
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor created by John Gruber and Aaron Swartz in 2004.
 
-In the project directory, you can run:
+![markdown](https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
 
-### `npm start`
+### `Who are using Markdown?`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Most of developers and even non-developers are using Markdown to explain their project or to record something important in their digital note since they are pretty easy to learn.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Why did i make this project?`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+As i wanted to explain my project with well organized documentation, i felt i needed to learn Markdown language. Also thought that it's gonna be great if i deploy this app and let people learn it sice it's widely used and pretty easy to learn compared to other languages.
