@@ -6,9 +6,12 @@ const S = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
     border-bottom: 1px solid lightgray;
     padding: 16px;
+  `,
+
+  Title: styled.strong`
+    font-size: 24px;
   `,
 
   Div: styled.div`
@@ -16,6 +19,7 @@ const S = {
     border: 1px solid lightgray;
     box-sizing: border-box;
     font-family: monospace;
+    margin: 10px 0px;
   `,
 
   Paragraph: styled.p`
@@ -31,7 +35,7 @@ interface Props {
 const Example: React.FC<Props> = ({ children, description }) => {
   return (
     <S.Example>
-      <h1>Markdown</h1>
+      <S.Title>Markdown</S.Title>
       <S.Div>
         <S.Paragraph>{children}</S.Paragraph>
       </S.Div>

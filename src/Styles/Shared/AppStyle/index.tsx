@@ -19,5 +19,16 @@ export const S = {
     align-items: center;
     min-width: 200px;
     max-width: 350px;
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+      background-color: lightgray;
+    }
   `,
 };

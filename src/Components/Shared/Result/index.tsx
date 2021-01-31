@@ -6,11 +6,19 @@ const S = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    padding: 16px;
   `,
 
-  Paragraph: styled.p`
-    padding: 16px;
+  Strong: styled.strong`
+    text-align: center;
+    font-size: 24px;
+  `,
+
+  Div: styled.div`
+    padding: 12px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin: 10px 0px;
   `,
 };
 
@@ -21,8 +29,8 @@ interface Props {
 const Result: React.FC<Props> = ({ children }) => {
   return (
     <S.Result>
-      <h1>Rendered Output</h1>
-      <S.Paragraph>{children}</S.Paragraph>
+      <S.Strong>Rendered Output</S.Strong>
+      <S.Div>{children}</S.Div>
     </S.Result>
   );
 };
