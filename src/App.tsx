@@ -4,8 +4,12 @@ import { S } from 'Styles/Shared/AppStyle';
 import Nav from 'Components/Layout/Nav';
 import Main from 'Components/Layout/Main';
 import Heading from 'Pages/Heading';
-import TextAttributes from 'Pages/TextAttributes';
 import Paragraph from 'Pages/Paragraph';
+import lineBreaks from 'Pages/LineBreaks';
+import TextAttributes from 'Pages/TextAttributes';
+import List from 'Pages/List';
+import Image from 'Pages/Image';
+import Link from 'Pages/Link';
 
 function App() {
   return (
@@ -15,8 +19,12 @@ function App() {
         <S.AppBody>
           <Switch>
             <Route exact path="/heading" component={Heading} />
-            <Route exact path="/textAttributes" component={TextAttributes} />
             <Route exact path="/paragraph" component={Paragraph} />
+            <Route exact path="/lineBreaks" component={lineBreaks} />
+            <Route exact path="/textAttributes" component={TextAttributes} />
+            <Route exact path="/list" component={List} />
+            <Route exact path="/link" component={Link} />
+            <Route exact path="/image" component={Image} />
           </Switch>
           <Main />
         </S.AppBody>

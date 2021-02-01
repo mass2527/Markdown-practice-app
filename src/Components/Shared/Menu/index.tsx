@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
+import styled from 'styled-components';
+
+const S = {
+  Wrapper: styled.div`
+    margin-right: 16px;
+  `,
+};
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const history = useHistory();
+  const location = useLocation();
+  useEffect(() => {
+    return () => handleClose();
+  }, [location.pathname]);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -16,31 +27,20 @@ export default function SimpleMenu() {
     setAnchorEl(null);
   };
 
-  const clickHeading = () => {
-    history.push('/heading');
-    handleClose();
-  };
-
-  const clickParagraph = () => {
-    history.push('/paragraph');
-    handleClose();
-  };
-
-  const clickTextAttributes = () => {
-    history.push('/textAttributes');
-    handleClose();
-  };
-
   return (
-    <div>
+    <S.Wrapper>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
         Open Menu
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
-        <MenuItem onClick={clickHeading}>Heading</MenuItem>
-        <MenuItem onClick={clickParagraph}>Paragraph</MenuItem>
-        <MenuItem onClick={clickTextAttributes}>Text attributes</MenuItem>
+        <MenuItem onClick={() => history.push('/heading')}>1. Heading</MenuItem>
+        <MenuItem onClick={() => history.push('/paragraph')}>2. Paragraph</MenuItem>
+        <MenuItem onClick={() => history.push('/lineBreaks')}>3. Line Breaks</MenuItem>
+        <MenuItem onClick={() => history.push('/textAttributes')}>4. Text attributes</MenuItem>
+        <MenuItem onClick={() => history.push('/list')}>5. List</MenuItem>
+        <MenuItem onClick={() => history.push('/link')}>6. Link</MenuItem>
+        <MenuItem onClick={() => history.push('/image')}>7. Image</MenuItem>
       </Menu>
-    </div>
+    </S.Wrapper>
   );
 }

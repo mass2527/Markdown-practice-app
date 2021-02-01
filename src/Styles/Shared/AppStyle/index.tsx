@@ -17,9 +17,10 @@ export const S = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px;
-    max-width: 350px;
+    min-width: 350px;
+    max-width: 500px;
     overflow-y: scroll;
+    /* overflow-x: hidden; */
 
     ::-webkit-scrollbar {
       width: 5px;

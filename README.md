@@ -13,3 +13,5 @@ Most of developers and even non-developers are using Markdown to explain their p
 ### `Why did i make this project?`
 
 As i wanted to explain my project with well organized documentation, i felt i needed to learn Markdown language. Also thought that it's gonna be great if i deploy this app and let people learn it sice it's widely used and pretty easy to learn compared to other languages.
+
+<center>dongho</center>

@@ -23,9 +23,31 @@ h1{
   font-size:32px;
 }
 
+p{ 
+  font-size:16px;
+}
+
+ul,ol{ 
+  padding-left:20px;
+}
+
+img{ 
+  max-width:100%;
+  object-fit:contain
+}
+
+a{ 
+  all:unset;
+  cursor:pointer;
+  color:black;
+  font-weight:bold;
+  
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  
 }
 
 button {

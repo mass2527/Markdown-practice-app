@@ -1,33 +1,52 @@
 import React from 'react';
 import { S } from 'Styles/Shared/AppStyle';
-import { Remarkable } from 'remarkable';
-import ReactHtmlParser from 'react-html-parser';
 import Example from 'Components/Shared/Example';
-import Result from 'Components/Shared/Result';
 
 interface Props {}
 
 const TextAttributes: React.FC<Props> = () => {
-  const md = new Remarkable();
-
   return (
     <S.Aside>
       <Example
-        description="Markdown provides 6 heading styles. You can make biggest heading by using one # and smallest heading by using
-          six #. Make sure # and literal have to be spaced."
+        title="Markdown"
+        description="To italicize text, add one asterisk before and after a word or phrase without spaces around the letters."
       >
-        *italic*
+        <code>
+          *italic*
+          <br />
+          **bold**
+          <br />
+          ***bold and italic***
+          <br />
+          ~~strikethrough~~
+        </code>
+      </Example>
+
+      <Example description="To bold text, add two asterisks before and after a word or phrase without spaces arond the letters." />
+
+      <Example
+        description="To emphasize text with bold and italics at the same time, add three asterisks before and after a word or phrase
+        without spaces around the letters."
+      />
+
+      <Example title="Rendered Output">
+        <em>italic</em>
         <br />
-        **bold**
+        <strong>bold</strong>
+        <br />
+        <strong>
+          <em>bold and italic</em>
+        </strong>
         <br />
         ~~strikethrough~~
       </Example>
 
-      <Result>
-        {ReactHtmlParser(md.render('*italic*'))}
-        {ReactHtmlParser(md.render('**bold**'))}
-        {ReactHtmlParser(md.render('~~strikethrough~~'))}
-      </Result>
+      <Example
+        title="Best Practice"
+        description="You can use underscore instead of asterisk to bold or italicize text. However, For compatibility, use asterisks to style the middle of a word for emphasis."
+        goodExample={<>This is really***very***important text.</>}
+        badExample={<>This is really___very___important text.</>}
+      />
     </S.Aside>
   );
 };
