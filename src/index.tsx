@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import App from 'App';
 import reportWebVitals from 'reportWebVitals';
 import GlobalStyle from 'Styles/GlobalStyle';
+import { ThemeContextProvider } from 'store/ThemeContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <ThemeContextProvider>
+      <App />
+    </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -11,10 +11,11 @@ const S = {
   `,
 };
 
-export default function SimpleMenu() {
+export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const history = useHistory();
   const location = useLocation();
+
   useEffect(() => {
     return () => handleClose();
   }, [location.pathname]);
@@ -30,8 +31,9 @@ export default function SimpleMenu() {
   return (
     <S.Wrapper>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        Open Menu
+        Basics
       </Button>
+
       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={() => history.push('/heading')}>1. Heading</MenuItem>
         <MenuItem onClick={() => history.push('/paragraph')}>2. Paragraph</MenuItem>

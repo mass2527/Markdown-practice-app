@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Menu from 'Components/Shared/Menu';
+import BasicMenu from 'Components/Shared/BasicMenu';
 import { useLocation } from 'react-router-dom';
+import ThemeMenu from 'Components/Shared/ThemeMenu';
 
 const S = {
   Nav: styled.nav`
@@ -31,7 +32,8 @@ const Nav: React.FC<Props> = () => {
   return (
     <S.Nav>
       <S.Title>{currentLocation.toUpperCase()[0] + currentLocation.slice(1)}</S.Title>
-      <Menu />
+      <ThemeMenu />
+      <BasicMenu />
     </S.Nav>
   );
 };

@@ -1,11 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Remarkable } from 'remarkable';
-import ReactHtmlParser from 'react-html-parser';
+import marked from 'marked';
+import { UnControlled as CodeMirror } from 'react-codemirror2';
+import 'codemirror/mode/markdown/markdown';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/material.css';
+import 'codemirror/theme/neat.css';
+import 'codemirror/theme/cobalt.css';
+import 'codemirror/theme/duotone-light.css';
+import 'codemirror/theme/paraiso-light.css';
+import 'codemirror/theme/blackboard.css';
+import { useThemeState } from 'store/ThemeContext';
+
+marked.setOptions({
+  headerPrefix: 'header-',
+});
 
 const S = {
   Main: styled.main`
     flex: 1;
+    width: 100px;
     border-left: 1px solid lightgray;
     display: flex;
     flex-direction: column;
@@ -15,6 +29,8 @@ const S = {
     height: calc(100vh - 200px);
     padding: 24px;
     overflow-y: scroll;
+    overflow-x: scroll;
+    border-bottom: 1px solid lightgray;asf
   `,
 
   TextArea: styled.textarea`
@@ -38,8 +54,11 @@ const S = {
 interface Props {}
 
 const Main: React.FC<Props> = () => {
-  const md = new Remarkable();
+  const { theme } = useThemeState();
   const [text, setText] = useState(localStorage.getItem('text') || '');
+  const html = {
+    __html: marked(text),
+  };
 
   useEffect(() => {
     localStorage.setItem('text', text);
@@ -47,8 +66,20 @@ const Main: React.FC<Props> = () => {
 
   return (
     <S.Main>
-      <S.Result>{ReactHtmlParser(md.render(text))}</S.Result>
-      <S.TextArea value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter some markdown"></S.TextArea>
+      <S.Result dangerouslySetInnerHTML={html}></S.Result>
+
+      <CodeMirror
+        value={text}
+        options={{
+          mode: 'markdown',
+          theme: `${theme}`,
+          lineNumbers: true,
+          autofocus: true,
+        }}
+        onChange={(editor, data, value) => {
+          setText(value);
+        }}
+      />
     </S.Main>
   );
 };

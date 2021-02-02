@@ -14,4 +14,17 @@ Most of developers and even non-developers are using Markdown to explain their p
 
 As i wanted to explain my project with well organized documentation, i felt i needed to learn Markdown language. Also thought that it's gonna be great if i deploy this app and let people learn it sice it's widely used and pretty easy to learn compared to other languages.
 
-<center>dongho</center>
+### `What did i use here?`
+
+- library
+
+1. marked (preview)
+2. React Codemirror (code editor)
+
+- localStorage
+
+  i used local storage so that code is not cleared after refreshing
+
+- react-router
+
+  every time user changes topic, route is changed and only aside component is rerendered so that code and preview section to be remained. Thought this would be great for user experience. If they forget something they can easily go back to any topic without code deleting.

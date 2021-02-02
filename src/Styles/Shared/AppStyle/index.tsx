@@ -20,16 +20,5 @@ export const S = {
     min-width: 350px;
     max-width: 500px;
     overflow-y: scroll;
-    /* overflow-x: hidden; */
-
-    ::-webkit-scrollbar {
-      width: 5px;
-      background-color: transparent;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      border-radius: 15px;
-      background-color: lightgray;
-    }
   `,
 };
