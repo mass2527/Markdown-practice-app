@@ -109,6 +109,20 @@ button {
 .CodeMirror {
   height:100%;
 }
+
+blockquote{ 
+  background-color: rgba(255,229,100,0.3);
+  border-left: 18px solid #ffe564;
+  padding: 20px 45px 20px 26px;
+}
+
+pre code{
+  background-color: #f2f2f2;
+  padding:20px;
+  margin-bottom:20px;
+  display: inline-block;
+}
+
 `;
 
 export default GlobalStyle;

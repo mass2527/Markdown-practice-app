@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import marked from 'marked';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
@@ -56,7 +56,6 @@ interface Props {}
 
 const Main: React.FC<Props> = () => {
   const { theme } = useThemeState();
-  const editorRef = useRef<HTMLDivElement | null>(null);
   const [text, setText] = useState(localStorage.getItem('text') || '');
   const html = {
     __html: marked(text),
@@ -77,7 +76,6 @@ const Main: React.FC<Props> = () => {
         }}
         minHeight={100}
         maxHeight={800}
-        onResize={(e) => console.dir(e.target)}
       >
         <CodeMirror
           value={text}

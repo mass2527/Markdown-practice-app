@@ -10,6 +10,7 @@ import TextAttributes from 'Pages/TextAttributes';
 import List from 'Pages/List';
 import Image from 'Pages/Image';
 import Link from 'Pages/Link';
+import Blockquotes from 'Pages/Blockquotes';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/list" component={List} />
             <Route exact path="/link" component={Link} />
             <Route exact path="/image" component={Image} />
+            <Route exact path="/blockquotes" component={Blockquotes} />
           </Switch>
           <Main />
         </S.AppBody>
