@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 *::-webkit-scrollbar {
-  width: 5px;
+  width: 13px;
   height:13px;
   background-color: transparent;
 }
@@ -27,6 +27,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow:hidden;
 }
 
 
@@ -100,6 +101,14 @@ button {
   color:#41323f !important;
 }
 
+.react-codemirror2{
+  min-height:100px;
+  height:100%;
+}
+
+.CodeMirror {
+  height:100%;
+}
 `;
 
 export default GlobalStyle;
