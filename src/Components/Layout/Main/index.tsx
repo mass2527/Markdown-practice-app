@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import marked from 'marked';
-import { UnControlled as CodeMirror } from 'react-codemirror2';
+import { Controlled as CodeMirror } from 'react-codemirror2';
 import { useThemeState } from 'store/ThemeContext';
 import 'codemirror/mode/markdown/markdown';
 import 'codemirror/lib/codemirror.css';
@@ -94,7 +94,7 @@ const Main: React.FC<Props> = () => {
             autofocus: true,
             screenReaderLabel: 'code-editor',
           }}
-          onChange={(editor, data, value) => {
+          onBeforeChange={(editor, data, value) => {
             setText(value);
           }}
         />
