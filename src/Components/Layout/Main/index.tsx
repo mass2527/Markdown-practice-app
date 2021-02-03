@@ -11,6 +11,7 @@ import 'codemirror/theme/cobalt.css';
 import 'codemirror/theme/duotone-light.css';
 import 'codemirror/theme/paraiso-light.css';
 import 'codemirror/theme/blackboard.css';
+
 import { Resizable } from 're-resizable';
 
 marked.setOptions({
@@ -72,11 +73,17 @@ const Main: React.FC<Props> = () => {
       <Resizable
         defaultSize={{
           width: 'auto',
-          height: '250',
+          height: localStorage.getItem('editorHeight') || '250',
         }}
         minHeight={100}
         maxHeight={800}
         minWidth="auto"
+        onResizeStop={(e, direction, ref, d) => {
+          const currentHeight = Number(localStorage.getItem('editorHeight'));
+
+          if (!currentHeight) return;
+          localStorage.setItem('editorHeight', String(currentHeight + d.height));
+        }}
       >
         <CodeMirror
           value={text}
@@ -85,6 +92,7 @@ const Main: React.FC<Props> = () => {
             theme: `${theme}`,
             lineNumbers: true,
             autofocus: true,
+            screenReaderLabel: 'code-editor',
           }}
           onChange={(editor, data, value) => {
             setText(value);

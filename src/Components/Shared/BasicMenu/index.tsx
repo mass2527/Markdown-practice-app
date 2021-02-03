@@ -43,6 +43,7 @@ export default function BasicMenu() {
         <MenuItem onClick={() => history.push('/link')}>6. Link</MenuItem>
         <MenuItem onClick={() => history.push('/image')}>7. Image</MenuItem>
         <MenuItem onClick={() => history.push('/blockquotes')}>8. Blockquotes</MenuItem>
+        <MenuItem onClick={() => history.push('/codeBlocks')}>9. Code Blocks</MenuItem>
       </Menu>
     </S.Wrapper>
   );

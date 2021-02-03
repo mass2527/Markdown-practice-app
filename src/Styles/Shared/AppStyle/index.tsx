@@ -31,17 +31,17 @@ export const S = {
 export const Resizing = ({ children }: { children: ReactNode }) => (
   <Resizable
     defaultSize={{
-      width: localStorage.getItem('width') || '350',
+      width: localStorage.getItem('asideWidth') || '350',
       height: 'auto',
     }}
     minHeight="auto"
     minWidth={350}
     maxWidth="50vw"
     onResizeStop={(e, direction, ref, d) => {
-      const currentWidth = Number(localStorage.getItem('width'));
-      if (!currentWidth) return;
+      const currentAsideWidth = Number(localStorage.getItem('asideWidth'));
+      if (!currentAsideWidth) return;
 
-      localStorage.setItem('width', String(currentWidth + d.width));
+      localStorage.setItem('asideWidth', String(currentAsideWidth + d.width));
     }}
   >
     {children}

@@ -35,6 +35,12 @@ h1{
   font-size:32px;
 }
 
+main h1{
+  border-bottom:1px solid lightgray;
+  padding-bottom:5px;
+  margin-bottom:10px;
+}
+
 p{ 
   font-size:16px;
 }
@@ -114,12 +120,13 @@ blockquote{
   background-color: rgba(255,229,100,0.3);
   border-left: 18px solid #ffe564;
   padding: 20px 45px 20px 26px;
+  margin:5px 0px;
 }
 
 pre code{
   background-color: #f2f2f2;
   padding:20px;
-  margin-bottom:20px;
+margin:10px 0px;
   display: block;
 }
 

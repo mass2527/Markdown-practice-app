@@ -5,6 +5,11 @@ import Example from 'Components/Shared/Example';
 interface Props {}
 
 const Paragraph: React.FC<Props> = () => {
+  const text = `
+  I really like using Markdown.  
+  <br/>
+  I think I'll use it to format all of my documents from now on.`;
+
   return (
     <Resizing>
       <S.Aside>
@@ -19,11 +24,7 @@ const Paragraph: React.FC<Props> = () => {
           </code>
         </Example>
 
-        <Example title="Rendered Output">
-          I really like using Markdown.
-          <br />
-          <br />I think I'll use it to format all of my documents from now on.
-        </Example>
+        <Example title="Rendered Output" text={text} />
 
         <Example
           title="Best Practice"

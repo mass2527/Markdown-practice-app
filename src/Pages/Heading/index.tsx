@@ -1,20 +1,24 @@
 import React from 'react';
 import { Resizing, S } from 'Styles/Shared/AppStyle';
-import { Remarkable } from 'remarkable';
-import ReactHtmlParser from 'react-html-parser';
 import Example from 'Components/Shared/Example';
 
 interface Props {}
 
 const Heading: React.FC<Props> = () => {
-  const md = new Remarkable();
   const text = `
-  # Heading
-  ## Heading
-  ### Heading
-  #### Heading
-  ##### Heading
-  ###### Heading
+  # H1
+  ***
+  ## H2
+  ### H3
+  #### H4
+  ##### H5
+  ###### H6
+
+  H1
+  ===
+  ***
+  H2
+  ---
   `;
 
   return (
@@ -22,23 +26,42 @@ const Heading: React.FC<Props> = () => {
       <S.Aside>
         <Example
           title="Markdown"
-          description="To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (<h3>), use three number signs."
+          description={
+            <>
+              To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
+              should correspond to the heading level. For example, to create a heading level three (&lt;h3&gt;), use
+              three number signs.
+              <br />
+              <br />
+              Alternatively, on the line below the text, add any number of = characters for heading level 1 or -
+              characters for heading level 2.
+            </>
+          }
         >
           <code>
-            # Heading
+            # H1
             <br />
-            ## Heading
+            ## H2
             <br />
-            ### Heading
+            ### H3
             <br />
-            #### Heading
+            #### H4
             <br />
-            ##### Heading
+            ##### H5
             <br />
-            ###### Heading
+            ###### H6
+            <br />
+            H1
+            <br />
+            ===
+            <br />
+            H2
+            <br />
+            ---
           </code>
         </Example>
-        <Example title="Rendered Output">{ReactHtmlParser(md.render(text))}</Example>
+
+        <Example title="Rendered Output" text={text} />
 
         <Example
           title="Best Practice"

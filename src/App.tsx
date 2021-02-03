@@ -11,11 +11,13 @@ import List from 'Pages/List';
 import Image from 'Pages/Image';
 import Link from 'Pages/Link';
 import Blockquotes from 'Pages/Blockquotes';
+import CodeBlocks from 'Pages/CodeBlocks';
 
 function App() {
   useEffect(() => {
-    if (localStorage.getItem('width')) return;
-    localStorage.setItem('width', String(350));
+    if (localStorage.getItem('asideWidth') && localStorage.getItem('editorHeight')) return;
+    localStorage.setItem('asideWidth', '350');
+    localStorage.setItem('editorHeight', '300');
   }, []);
 
   return (
@@ -32,6 +34,7 @@ function App() {
             <Route exact path="/link" component={Link} />
             <Route exact path="/image" component={Image} />
             <Route exact path="/blockquotes" component={Blockquotes} />
+            <Route exact path="/codeBlocks" component={CodeBlocks} />
           </Switch>
           <Main />
         </S.AppBody>

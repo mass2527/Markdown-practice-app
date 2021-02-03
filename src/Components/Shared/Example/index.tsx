@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
+import marked from 'marked';
 
 const S = {
   Example: styled.div`
@@ -62,13 +63,15 @@ interface Props {
   description?: string | ReactNode;
   goodExample?: string | ReactNode;
   badExample?: string | ReactNode;
+  text?: string;
 }
 
-const Example: React.FC<Props> = ({ title, children, description, goodExample, badExample }) => {
+const Example: React.FC<Props> = ({ title, children, description, goodExample, badExample, text }) => {
   return (
     <S.Example>
       <S.Title>{title}</S.Title>
       {children && <S.Div>{children}</S.Div>}
+      {text && <S.Div dangerouslySetInnerHTML={{ __html: marked(text) }}></S.Div>}
       <p>{description}</p>
       {goodExample && badExample && (
         <S.Cases>
