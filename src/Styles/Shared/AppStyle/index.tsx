@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Resizable } from 're-resizable';
+import { ReactNode } from 'react';
 
 export const S = {
   App: styled.div`
@@ -17,8 +19,31 @@ export const S = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 350px;
-    max-width: 500px;
     overflow-y: scroll;
+    height: calc(100vh - 55px);
+
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
   `,
 };
+
+export const Resizing = ({ children }: { children: ReactNode }) => (
+  <Resizable
+    defaultSize={{
+      width: localStorage.getItem('width') || '350',
+      height: 'auto',
+    }}
+    minHeight="auto"
+    minWidth={350}
+    maxWidth="50vw"
+    onResizeStop={(e, direction, ref, d) => {
+      const currentWidth = Number(localStorage.getItem('width'));
+      if (!currentWidth) return;
+
+      localStorage.setItem('width', String(currentWidth + d.width));
+    }}
+  >
+    {children}
+  </Resizable>
+);

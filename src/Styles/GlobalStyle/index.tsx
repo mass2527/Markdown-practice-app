@@ -120,7 +120,7 @@ pre code{
   background-color: #f2f2f2;
   padding:20px;
   margin-bottom:20px;
-  display: inline-block;
+  display: block;
 }
 
 `;

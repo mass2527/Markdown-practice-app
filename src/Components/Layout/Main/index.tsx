@@ -76,6 +76,7 @@ const Main: React.FC<Props> = () => {
         }}
         minHeight={100}
         maxHeight={800}
+        minWidth="auto"
       >
         <CodeMirror
           value={text}

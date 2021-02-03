@@ -26,6 +26,7 @@ const S = {
     display: flex;
     flex-direction: column;
     margin: 25px 0px;
+    margin-bottom: 20px;
   `,
 
   Case: styled.div`
