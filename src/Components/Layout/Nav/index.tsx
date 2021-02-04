@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BasicMenu from 'Components/Shared/BasicMenu';
 import { useLocation } from 'react-router-dom';
 import ThemeMenu from 'Components/Shared/ThemeMenu';
+import ExtendedMenu from 'Components/Shared/ExtendedMenu';
 
 const S = {
   Nav: styled.nav`
@@ -33,7 +34,9 @@ const Nav: React.FC<Props> = () => {
     <S.Nav>
       <S.Title>{currentLocation.toUpperCase()[0] + currentLocation.slice(1)}</S.Title>
       <ThemeMenu />
+
       <BasicMenu />
+      <ExtendedMenu />
     </S.Nav>
   );
 };

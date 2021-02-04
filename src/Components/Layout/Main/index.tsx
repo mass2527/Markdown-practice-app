@@ -14,10 +14,6 @@ import 'codemirror/theme/blackboard.css';
 
 import { Resizable } from 're-resizable';
 
-marked.setOptions({
-  headerPrefix: 'header-',
-});
-
 const S = {
   Main: styled.main`
     flex: 1;

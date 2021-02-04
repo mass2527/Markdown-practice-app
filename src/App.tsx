@@ -12,6 +12,8 @@ import Image from 'Pages/Image';
 import Link from 'Pages/Link';
 import Blockquotes from 'Pages/Blockquotes';
 import CodeBlocks from 'Pages/CodeBlocks';
+import Tables from 'Pages/Tables';
+import HeadingId from 'Pages/HeadingId';
 
 function App() {
   useEffect(() => {
@@ -35,6 +37,8 @@ function App() {
             <Route exact path="/image" component={Image} />
             <Route exact path="/blockquotes" component={Blockquotes} />
             <Route exact path="/codeBlocks" component={CodeBlocks} />
+            <Route exact path="/tables" component={Tables} />
+            <Route exact path="/headingId" component={HeadingId} />
           </Switch>
           <Main />
         </S.AppBody>
