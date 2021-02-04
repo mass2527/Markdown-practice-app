@@ -25,7 +25,7 @@ const List: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="List"
           description={
             <>
               To create an ordered list, add line items with numbers followed by periods.

@@ -4,7 +4,7 @@ import Example from 'Components/Shared/Example';
 
 interface Props {}
 
-const Blockquotes: React.FC<Props> = () => {
+const Blockquote: React.FC<Props> = () => {
   const text = `
   <code>
     <blockquote>Markdown is easy to learn.</blockquote>
@@ -20,7 +20,7 @@ const Blockquotes: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Blockquote"
           description={
             <>
               To create a blockquote, add a &gt; in front of a paragraph.
@@ -50,4 +50,4 @@ const Blockquotes: React.FC<Props> = () => {
   );
 };
 
-export default Blockquotes;
+export default Blockquote;

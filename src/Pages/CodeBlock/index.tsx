@@ -4,14 +4,14 @@ import Example from 'Components/Shared/Example';
 
 interface Props {}
 
-const CodeBlocks: React.FC<Props> = () => {
+const CodeBlock: React.FC<Props> = () => {
   const text = "<pre><code>console.log('i love you')</code></pre>";
 
   return (
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Code Block"
           description="To create code blocks, indent every line of the block by at least four spaces or one tab."
         >
           <code>
@@ -29,4 +29,4 @@ const CodeBlocks: React.FC<Props> = () => {
   );
 };
 
-export default CodeBlocks;
+export default CodeBlock;

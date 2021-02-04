@@ -16,7 +16,7 @@ const Link: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Link"
           description="To create a link, enclose the link text in brackets [Markdown] and then follow it immediately with the URL in parentheses (https://www.markdownguide.org)."
         >
           <code>

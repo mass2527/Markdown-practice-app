@@ -4,7 +4,7 @@ import Example from 'Components/Shared/Example';
 
 interface Props {}
 
-const LineBreaks: React.FC<Props> = () => {
+const LineBreak: React.FC<Props> = () => {
   const text = `
   This is the first line.  
   And this is the second line.  
@@ -16,7 +16,7 @@ const LineBreaks: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Line Break"
           description={
             <>
               To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
@@ -59,4 +59,4 @@ const LineBreaks: React.FC<Props> = () => {
   );
 };
 
-export default LineBreaks;
+export default LineBreak;

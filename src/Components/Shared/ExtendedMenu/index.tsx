@@ -27,9 +27,9 @@ export default function ExtendedMenu() {
         Extended
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
-        <MenuItem onClick={() => history.push('/tables')}>Tables</MenuItem>
-        <MenuItem onClick={() => history.push('/headingId')}>Heading ID</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={() => history.push('/table')}>1. Table</MenuItem>
+        <MenuItem onClick={() => history.push('/headingId')}>2. Heading ID</MenuItem>
+        <MenuItem onClick={() => history.push('/taskList')}>3. Task List</MenuItem>
       </Menu>
     </div>
   );

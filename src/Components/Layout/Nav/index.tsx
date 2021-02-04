@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import BasicMenu from 'Components/Shared/BasicMenu';
-import { useLocation } from 'react-router-dom';
 import ThemeMenu from 'Components/Shared/ThemeMenu';
 import ExtendedMenu from 'Components/Shared/ExtendedMenu';
 
@@ -18,25 +17,25 @@ const S = {
   Title: styled.h1`
     margin-left: 16px;
   `,
+
+  Tutorials: styled.div`
+    display: flex;
+  `,
 };
 
 interface Props {}
 
 const Nav: React.FC<Props> = () => {
-  const location = useLocation();
-  const currentLocation = location.pathname
-    .slice(1)
-    .replace(/([A-Z]+)/g, ',$1')
-    .replace(',', ' ')
-    .toLowerCase();
-
   return (
     <S.Nav>
-      <S.Title>{currentLocation.toUpperCase()[0] + currentLocation.slice(1)}</S.Title>
+      <S.Title>Markdown</S.Title>
+
       <ThemeMenu />
 
-      <BasicMenu />
-      <ExtendedMenu />
+      <S.Tutorials>
+        <BasicMenu />
+        <ExtendedMenu />
+      </S.Tutorials>
     </S.Nav>
   );
 };

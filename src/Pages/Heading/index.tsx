@@ -25,7 +25,7 @@ const Heading: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Heading"
           description={
             <>
               To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use

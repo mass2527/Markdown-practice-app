@@ -4,7 +4,7 @@ import Example from 'Components/Shared/Example';
 
 interface Props {}
 
-const TextAttributes: React.FC<Props> = () => {
+const TextAttribute: React.FC<Props> = () => {
   const text = `
   *italic*  
   **bold**  
@@ -15,7 +15,7 @@ const TextAttributes: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Text Attribute"
           description={
             <>
               To italicize text, add one asterisk or underscore before and after a word or phrase without spaces around
@@ -55,4 +55,4 @@ const TextAttributes: React.FC<Props> = () => {
   );
 };
 
-export default TextAttributes;
+export default TextAttribute;

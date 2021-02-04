@@ -5,15 +5,16 @@ import Nav from 'Components/Layout/Nav';
 import Main from 'Components/Layout/Main';
 import Heading from 'Pages/Heading';
 import Paragraph from 'Pages/Paragraph';
-import lineBreaks from 'Pages/LineBreaks';
-import TextAttributes from 'Pages/TextAttributes';
+import lineBreak from 'Pages/LineBreak';
+import TextAttribute from 'Pages/TextAttribute';
 import List from 'Pages/List';
 import Image from 'Pages/Image';
 import Link from 'Pages/Link';
-import Blockquotes from 'Pages/Blockquotes';
-import CodeBlocks from 'Pages/CodeBlocks';
-import Tables from 'Pages/Tables';
+import Blockquote from 'Pages/Blockquote';
+import CodeBlock from 'Pages/CodeBlock';
+import Table from 'Pages/Table';
 import HeadingId from 'Pages/HeadingId';
+import TaskList from 'Pages/TaskList';
 
 function App() {
   useEffect(() => {
@@ -30,15 +31,16 @@ function App() {
           <Switch>
             <Route exact path="/heading" component={Heading} />
             <Route exact path="/paragraph" component={Paragraph} />
-            <Route exact path="/lineBreaks" component={lineBreaks} />
-            <Route exact path="/textAttributes" component={TextAttributes} />
+            <Route exact path="/lineBreak" component={lineBreak} />
+            <Route exact path="/textAttribute" component={TextAttribute} />
             <Route exact path="/list" component={List} />
             <Route exact path="/link" component={Link} />
             <Route exact path="/image" component={Image} />
-            <Route exact path="/blockquotes" component={Blockquotes} />
-            <Route exact path="/codeBlocks" component={CodeBlocks} />
-            <Route exact path="/tables" component={Tables} />
+            <Route exact path="/blockquote" component={Blockquote} />
+            <Route exact path="/codeBlock" component={CodeBlock} />
+            <Route exact path="/table" component={Table} />
             <Route exact path="/headingId" component={HeadingId} />
+            <Route exact path="/taskList" component={TaskList} />
           </Switch>
           <Main />
         </S.AppBody>

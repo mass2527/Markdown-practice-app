@@ -61,7 +61,7 @@ const HeadingId: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Heading ID"
           description={
             <>
               Every headings has their own id that is same with heading. For example if you write # medium, &lt;h1

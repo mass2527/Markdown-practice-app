@@ -14,7 +14,7 @@ const Paragraph: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Paragraph"
           description="To create paragraphs, use a blank line to separate one or more lines of text."
         >
           <code>

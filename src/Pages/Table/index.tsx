@@ -4,7 +4,7 @@ import Example from 'Components/Shared/Example';
 
 interface Props {}
 
-const Tables: React.FC<Props> = () => {
+const Table: React.FC<Props> = () => {
   const text = `
   | Syntax | Description |
   | ----------- | ----------- |
@@ -24,7 +24,7 @@ const Tables: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Table"
           description={
             <>
               To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to
@@ -51,4 +51,4 @@ const Tables: React.FC<Props> = () => {
   );
 };
 
-export default Tables;
+export default Table;

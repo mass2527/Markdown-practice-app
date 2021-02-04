@@ -37,13 +37,13 @@ export default function BasicMenu() {
       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={() => history.push('/heading')}>1. Heading</MenuItem>
         <MenuItem onClick={() => history.push('/paragraph')}>2. Paragraph</MenuItem>
-        <MenuItem onClick={() => history.push('/lineBreaks')}>3. Line Breaks</MenuItem>
-        <MenuItem onClick={() => history.push('/textAttributes')}>4. Text attributes</MenuItem>
+        <MenuItem onClick={() => history.push('/lineBreak')}>3. Line Break</MenuItem>
+        <MenuItem onClick={() => history.push('/textAttribute')}>4. Text attribute</MenuItem>
         <MenuItem onClick={() => history.push('/list')}>5. List</MenuItem>
         <MenuItem onClick={() => history.push('/link')}>6. Link</MenuItem>
         <MenuItem onClick={() => history.push('/image')}>7. Image</MenuItem>
-        <MenuItem onClick={() => history.push('/blockquotes')}>8. Blockquotes</MenuItem>
-        <MenuItem onClick={() => history.push('/codeBlocks')}>9. Code Blocks</MenuItem>
+        <MenuItem onClick={() => history.push('/blockquote')}>8. Blockquote</MenuItem>
+        <MenuItem onClick={() => history.push('/codeBlock')}>9. Code Block</MenuItem>
       </Menu>
     </S.Wrapper>
   );

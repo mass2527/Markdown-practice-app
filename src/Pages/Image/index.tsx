@@ -15,7 +15,7 @@ const Image: React.FC<Props> = () => {
     <Resizing>
       <S.Aside>
         <Example
-          title="Markdown"
+          title="Image"
           description={
             <>
               To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the
