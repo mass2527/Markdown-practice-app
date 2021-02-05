@@ -15,7 +15,12 @@ const Paragraph: React.FC<Props> = () => {
       <S.Aside>
         <Example
           title="Paragraph"
-          description="To create paragraphs, use a blank line to separate one or more lines of text."
+          description={
+            <>
+              <br />
+              To create paragraphs, use a blank line to separate one or more lines of text.
+            </>
+          }
         >
           <code>
             I really like using Markdown.

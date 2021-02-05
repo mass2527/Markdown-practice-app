@@ -21,8 +21,8 @@ import Html from 'Pages/Html';
 function App() {
   useEffect(() => {
     if (localStorage.getItem('asideWidth') && localStorage.getItem('editorHeight')) return;
-    localStorage.setItem('asideWidth', '350');
-    localStorage.setItem('editorHeight', '300');
+    localStorage.setItem('asideWidth', '50vw');
+    localStorage.setItem('editorHeight', '250');
   }, []);
 
   return (

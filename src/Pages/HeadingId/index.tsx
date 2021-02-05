@@ -38,23 +38,6 @@ const HeadingId: React.FC<Props> = () => {
   <br/>
   <br/>
   <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  
   <h1 id="end">end</h1>
   `;
   return (
@@ -64,6 +47,7 @@ const HeadingId: React.FC<Props> = () => {
           title="Heading ID"
           description={
             <>
+              <br />
               Every headings has their own id that is same with heading. For example if you write # medium, &lt;h1
               id='medium'&gt;medium&lt;h1&gt; is automatically generated.
               <br />

@@ -23,6 +23,7 @@ const Blockquote: React.FC<Props> = () => {
           title="Blockquote"
           description={
             <>
+              <br />
               To create a blockquote, add a &gt; in front of a paragraph.
               <br />
               <br />

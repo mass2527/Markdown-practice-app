@@ -18,6 +18,7 @@ const TextAttribute: React.FC<Props> = () => {
           title="Text Attribute"
           description={
             <>
+              <br />
               To italicize text, add one asterisk or underscore before and after a word or phrase without spaces around
               the letters.
               <br />

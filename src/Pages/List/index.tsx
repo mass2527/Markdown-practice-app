@@ -28,6 +28,7 @@ const List: React.FC<Props> = () => {
           title="List"
           description={
             <>
+              <br />
               To create an ordered list, add line items with numbers followed by periods.
               <br />
               <br />

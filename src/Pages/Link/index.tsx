@@ -15,10 +15,7 @@ const Link: React.FC<Props> = () => {
   return (
     <Resizing>
       <S.Aside>
-        <Example
-          title="Link"
-          description="To create a link, enclose the link text in brackets [Markdown] and then follow it immediately with the URL in parentheses (https://www.markdownguide.org)."
-        >
+        <Example title="Link">
           <code>
             [name](url)
             <br />
@@ -33,6 +30,10 @@ const Link: React.FC<Props> = () => {
         <Example
           description={
             <>
+              To create a link, enclose the link text in brackets [Markdown] and then follow it immediately with the URL
+              in parentheses (https://www.markdownguide.org).
+              <br />
+              <br />
               You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the
               link. To add a title, enclose it in parentheses after the URL.
               <br />

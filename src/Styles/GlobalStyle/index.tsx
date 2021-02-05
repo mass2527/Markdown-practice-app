@@ -24,7 +24,10 @@ body {
   font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow:hidden;
+  overflow-x:hidden;
+  
+  /* position:fixed;
+  top:0; */
 }
 
 h1{ 
@@ -34,7 +37,6 @@ h1{
 main h1{
   border-bottom:1px solid lightgray;
   padding-bottom:5px;
-  margin-bottom:10px;
 }
 
 p{ 
@@ -42,7 +44,11 @@ p{
 }
 
 aside p{
-  max-width:400px;
+  max-width:500px;
+}
+
+section p,ul,ol,h1,h2,h3,h4,h5,h6,hr,table{
+  margin-bottom:18px;
 }
 
 ul,ol{ 
@@ -66,7 +72,7 @@ code {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 table {
@@ -120,6 +126,10 @@ th,td {
 
 .CodeMirror {
   height:100%;
+}
+
+.CodeMirror-scroll{
+
 }
 
 blockquote{ 

@@ -18,6 +18,7 @@ const Image: React.FC<Props> = () => {
           title="Image"
           description={
             <>
+              <br />
               To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the
               image asset in parentheses.
               <br />

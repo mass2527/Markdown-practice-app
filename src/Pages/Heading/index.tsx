@@ -28,6 +28,7 @@ const Heading: React.FC<Props> = () => {
           title="Heading"
           description={
             <>
+              <br />
               To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use
               should correspond to the heading level. For example, to create a heading level three (&lt;h3&gt;), use
               three number signs.
@@ -65,8 +66,15 @@ const Heading: React.FC<Props> = () => {
 
         <Example
           title="Best Practice"
-          description="Markdown applications don’t agree on how to handle a missing space between the number signs (#) and the heading
-      name. For compatibility, always put a space between the number signs and the heading name."
+          description={
+            <>
+              Markdown applications don’t agree on how to handle a missing space between the number signs (#) and the
+              heading name.
+              <br />
+              <br />
+              For compatibility, always put a space between the number signs and the heading name.
+            </>
+          }
           goodExample="# Here's a Heading"
           badExample="#Here's a Heading"
         />

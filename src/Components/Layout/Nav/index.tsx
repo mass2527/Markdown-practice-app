@@ -15,12 +15,14 @@ const S = {
     align-items: center;
   `,
 
-  Title: styled.h1`
+  Title: styled.span`
+    font-size: 32px;
+    font-weight: bold;
     margin-left: 16px;
     cursor: pointer;
   `,
 
-  Tutorials: styled.div`
+  Menus: styled.div`
     display: flex;
   `,
 };
@@ -34,12 +36,11 @@ const Nav: React.FC<Props> = () => {
     <S.Nav>
       <S.Title onClick={() => history.push('/')}>Markdown Everywhere</S.Title>
 
-      <ThemeMenu />
-
-      <S.Tutorials>
+      <S.Menus>
+        <ThemeMenu />
         <BasicMenu />
         <ExtendedMenu />
-      </S.Tutorials>
+      </S.Menus>
     </S.Nav>
   );
 };

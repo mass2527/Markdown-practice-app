@@ -19,7 +19,8 @@ const LineBreak: React.FC<Props> = () => {
           title="Line Break"
           description={
             <>
-              To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
+              <br />
+              To create a line break, end a line with two or more spaces, and then type return.
               <br />
               <br />
               To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a
@@ -40,7 +41,7 @@ const LineBreak: React.FC<Props> = () => {
 
         <Example
           title="Best Practice"
-          description="For compatibility, put blank lines before and after horizontal rules since putting equal sign or dashes right below the line is alterative syntax of making heading"
+          description="For compatibility, put blank lines before and after horizontal rules since putting equal sign or dashes right below the text is alterative syntax of making heading"
           goodExample={
             <>
               Try to put a blank line before... <br />

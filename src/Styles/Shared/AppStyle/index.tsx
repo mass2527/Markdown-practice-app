@@ -12,7 +12,6 @@ export const S = {
   AppBody: styled.div`
     height: calc(100vh - 55px);
     display: flex;
-    /* flex-direction: column; */
   `,
 
   Aside: styled.aside`
@@ -32,7 +31,7 @@ export const S = {
 export const Resizing = ({ children }: { children: ReactNode }) => (
   <Resizable
     defaultSize={{
-      width: localStorage.getItem('asideWidth') || '350',
+      width: localStorage.getItem('asideWidth') || '50vw',
       height: 'auto',
     }}
     minHeight="auto"

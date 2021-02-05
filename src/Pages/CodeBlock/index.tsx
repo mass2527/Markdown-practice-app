@@ -14,6 +14,7 @@ const CodeBlock: React.FC<Props> = () => {
           title="Code Block"
           description={
             <>
+              <br />
               To create code blocks, indent every line of the block by at least four spaces or one tab.
               <br />
               <br />
