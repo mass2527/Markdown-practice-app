@@ -15,6 +15,11 @@ const S = {
     align-items: center;
   `,
 
+  Logo: styled.img`
+    width: 40px;
+    height: 0px;
+  `,
+
   Title: styled.span`
     font-size: 32px;
     font-weight: bold;

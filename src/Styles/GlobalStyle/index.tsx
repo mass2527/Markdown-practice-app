@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
 *{
   margin:0; 
 }
@@ -25,9 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x:hidden;
-  
-  /* position:fixed;
-  top:0; */
 }
 
 h1{ 
@@ -126,10 +122,6 @@ th,td {
 
 .CodeMirror {
   height:100%;
-}
-
-.CodeMirror-scroll{
-
 }
 
 blockquote{ 

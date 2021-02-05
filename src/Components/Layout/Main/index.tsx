@@ -12,7 +12,6 @@ import 'codemirror/theme/duotone-light.css';
 import 'codemirror/theme/paraiso-light.css';
 import 'codemirror/theme/blackboard.css';
 import { Resizable } from 're-resizable';
-import markdownLogo from 'assets/markdownLogo.png';
 
 const S = {
   Main: styled.main`

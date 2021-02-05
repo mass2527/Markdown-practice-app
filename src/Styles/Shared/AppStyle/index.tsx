@@ -7,6 +7,9 @@ export const S = {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
   `,
 
   AppBody: styled.div`
