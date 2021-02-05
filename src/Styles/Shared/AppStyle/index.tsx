@@ -12,6 +12,7 @@ export const S = {
   AppBody: styled.div`
     height: calc(100vh - 55px);
     display: flex;
+    /* flex-direction: column; */
   `,
 
   Aside: styled.aside`

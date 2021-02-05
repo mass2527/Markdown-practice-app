@@ -32,7 +32,7 @@ const Nav: React.FC<Props> = () => {
 
   return (
     <S.Nav>
-      <S.Title onClick={() => history.push('/')}>Markdown</S.Title>
+      <S.Title onClick={() => history.push('/')}>Markdown Everywhere</S.Title>
 
       <ThemeMenu />
 

@@ -3,8 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 *{
-  margin:0;
-  
+  margin:0; 
 }
 
 *:focus {
@@ -22,15 +21,11 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
   font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow:hidden;
 }
-
 
 h1{ 
   font-size:32px;
@@ -46,6 +41,10 @@ p{
   font-size:16px;
 }
 
+aside p{
+  max-width:400px;
+}
+
 ul,ol{ 
   padding-left:20px;
 }
@@ -59,34 +58,25 @@ a{
   all:unset;
   cursor:pointer;
   color:#0366d6;
-  font-weight:bold;
-  
+  font-weight:bold; 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace; 
 }
 
 button {
     cursor: pointer;
-  }
+}
 
 table {
   border:1px solid lightgray;
-  
 }
 
 th,td {
   border:1px solid lightgray;
   padding:5px;
-
 }
-
-
-
-
 
 .material{
   background-color:#263238 !important; ;
@@ -142,7 +132,7 @@ blockquote{
 pre code{
   background-color: #f2f2f2;
   padding:20px;
-margin:10px 0px;
+  margin:10px 0px;
   display: block;
 }
 
