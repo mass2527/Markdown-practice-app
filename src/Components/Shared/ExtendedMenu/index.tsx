@@ -30,6 +30,7 @@ export default function ExtendedMenu() {
         <MenuItem onClick={() => history.push('/table')}>1. Table</MenuItem>
         <MenuItem onClick={() => history.push('/headingId')}>2. Heading ID</MenuItem>
         <MenuItem onClick={() => history.push('/taskList')}>3. Task List</MenuItem>
+        <MenuItem onClick={() => history.push('/html')}>4. HTML</MenuItem>
       </Menu>
     </div>
   );

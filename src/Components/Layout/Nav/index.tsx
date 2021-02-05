@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BasicMenu from 'Components/Shared/BasicMenu';
 import ThemeMenu from 'Components/Shared/ThemeMenu';
 import ExtendedMenu from 'Components/Shared/ExtendedMenu';
+import { useHistory } from 'react-router-dom';
 
 const S = {
   Nav: styled.nav`
@@ -16,6 +17,7 @@ const S = {
 
   Title: styled.h1`
     margin-left: 16px;
+    cursor: pointer;
   `,
 
   Tutorials: styled.div`
@@ -26,9 +28,11 @@ const S = {
 interface Props {}
 
 const Nav: React.FC<Props> = () => {
+  const history = useHistory();
+
   return (
     <S.Nav>
-      <S.Title>Markdown</S.Title>
+      <S.Title onClick={() => history.push('/')}>Markdown</S.Title>
 
       <ThemeMenu />
 

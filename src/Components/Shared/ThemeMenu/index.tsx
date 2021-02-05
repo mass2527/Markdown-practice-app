@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
       width: '170px',
-      border: '1px solid lightgray',
     },
   })
 );

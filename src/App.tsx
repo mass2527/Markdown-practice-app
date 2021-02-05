@@ -15,6 +15,8 @@ import CodeBlock from 'Pages/CodeBlock';
 import Table from 'Pages/Table';
 import HeadingId from 'Pages/HeadingId';
 import TaskList from 'Pages/TaskList';
+import Home from 'Pages/Home';
+import Html from 'Pages/Html';
 
 function App() {
   useEffect(() => {
@@ -41,6 +43,8 @@ function App() {
             <Route exact path="/table" component={Table} />
             <Route exact path="/headingId" component={HeadingId} />
             <Route exact path="/taskList" component={TaskList} />
+            <Route exact path="/html" component={Html} />
+            <Route path="/" component={Home} />
           </Switch>
           <Main />
         </S.AppBody>
