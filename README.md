@@ -27,11 +27,11 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 
 ### Why did i make Markdown - Everywhere
 
-- No matter how great open source project developers created, people won't know the value of project if they can't explain it with well organized document.
+1. No matter how great open source project developers created, people won't know the value of project if they can't explain it with well organized document.
 
-- Non-developers also can easily learn markdown and can use it to record something important with markdown editor.
+2. Non-developers also can easily learn markdown and can use it to record something important with markdown editor.
 
-- These are why i thought this is gonna be great if i deploy this app and let people learn about markdown.
+   These are why i thought this is gonna be great if i deploy this app and let people learn about markdown.
 
 <br/>
 
@@ -40,6 +40,8 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 #### Introduction page
 
 `There's some informative text about Markdown - Everywhere app`
+
+<br/>
 
 <center>
 <img src="./src/assets/Markdown%20-%20Everywhere.png" >
@@ -51,6 +53,8 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 
 `There's few different code editor theme that user can select`
 
+<br/>
+
 <center>
 <img src="./src/assets/theme.gif" >
 </center>
@@ -60,6 +64,8 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 #### Resizing is available
 
 `Users can resize sidebar width or code editor height`
+
+<br/>
 
 <center>
 <img src="./src/assets/resize.gif" >
@@ -71,6 +77,8 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 
 `Users can learn basic and extended markdown syntax by clicking the subject that they want to learn`
 
+<br/>
+
 <center>
 <img src="./src/assets/tutorial.gif" >
 </center>
@@ -80,6 +88,8 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 #### rendering output
 
 `Output is immediately rendered on the preview section as soon as user enter some text`
+
+<br/>
 
 <center>
 <img src="./src/assets/output.gif" >
