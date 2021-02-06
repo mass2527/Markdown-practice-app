@@ -34,7 +34,7 @@ export const S = {
 export const Resizing = ({ children }: { children: ReactNode }) => (
   <Resizable
     defaultSize={{
-      width: localStorage.getItem('asideWidth') || '50vw',
+      width: localStorage.getItem('asideWidth') || '960',
       height: 'auto',
     }}
     minHeight="auto"

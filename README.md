@@ -1,33 +1,110 @@
 # Markdown - Everywhere <img src="./public/favicon.ico" width="25">
 
+<br/>
+
+click [here](https://markdown-everywhere.web.app/) to see the live demo
+
+<br/>
+
+## Index
+
+[1. What is Markdown - Everywhere](#What-is-Markdown---Everywhere)  
+[2. Why did i make Markdown - Everywhere](#Why-did-i-make-Markdown---Everywhere)  
+[3. Detail](#Detail)  
+[4. What did i use here?](#What-did-i-use-here?)
+
+<br/>
+
+### What is Markdown - Everywhere?
+
+Markdown - Everywhere is a markdown practice web application that basically consist of three main element, description section, code editor section and markdown preview section.
+
+I named this app as Markdown - Everywhere since i wanted to users write markdown everywhere after they learn it from here.
+
+<br/>
+
+### Why did i make Markdown - Everywhere
+
+- No matter how great open source project developers created, people won't know the value of project if they can't explain it with well organized document.
+
+- Non-developers also can easily learn markdown and can use it to record something important with markdown editor.
+
+- These are why i thought this is gonna be great if i deploy this app and let people learn about markdown.
+
+<br/>
+
+### Detail
+
+#### Introduction page
+
+`There's some informative text about Markdown - Everywhere app`
+
 <center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png" width="100">
+<img src="./src/assets/Markdown%20-%20Everywhere.png" >
 </center>
 
 <br/>
 
-### What is Markdown?
+#### Theme options
 
-Markdown is a lightweight markup language for creating formatted text using a plain-text editor created by John Gruber and Aaron Swartz in 2004.
+`There's few different code editor theme that user can select`
 
-### Who are using Markdown?
+<center>
+<img src="./src/assets/theme.gif" >
+</center>
 
-Most of developers and even non-developers are using Markdown to explain their project or to record something important in their digital note since they are pretty easy to learn.
+<br/>
 
-### Why did i make this project?
+#### Resizing is available
 
-I thought that it's gonna be great if i deploy this app and let people learn markdown since it's widely used and pretty easy to learn.
+`Users can resize sidebar width or code editor height`
+
+<center>
+<img src="./src/assets/resize.gif" >
+</center>
+
+<br/>
+
+#### Various tutorials
+
+`Users can learn basic and extended markdown syntax by clicking the subject that they want to learn`
+
+<center>
+<img src="./src/assets/tutorial.gif" >
+</center>
+
+<br/>
+
+#### rendering output
+
+`Output is immediately rendered on the preview section as soon as user enter some text`
+
+<center>
+<img src="./src/assets/output.gif" >
+</center>
+
+<br/>
 
 ### What did i use here?
 
-- library
+- NPM package
 
-1. marked (preview)
-2. react-codemirror2 (code editor)
+  1. [marked](https://www.npmjs.com/package/marked) (preview section)  
+     As i needed to show users the output of Markdown, i used marked which is basically parse the text in the code editor into Markdown.
 
-- localStorage
+  2. [react-codemirror2](https://www.npmjs.com/package/react-codemirror2) (code editor section)  
+     At first, i used textarea tag for code editor section, However, i thought that it was not great for user experience since it doesn't provide syntax highlight and other useful ability like entering tab key.
+     That is why i used react-codemirror2 here.
 
-  i used local storage so that code is not cleared after refreshing
+  3. [re-resizable](https://www.npmjs.com/package/re-resizable) (sidebar and code editor)  
+     While i was using this app to test, i felt uncomfortable about the size of sidebar and code editor. Sometimes i needed to use large size code editor and sidebar, but, sometimes i don't. So i implemented re-resizable for flexible size.
+
+  <br/>
+
+- Web API
+
+  1. localStorage  
+     For better user experience, this app has to remember user's current settings like size and theme and text that users wrote in the code editor. So i implemented localStorage and put these data into it.
 
 - react-router
 
