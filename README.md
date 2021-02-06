@@ -4,6 +4,8 @@
 
 click [here](https://markdown-everywhere.web.app/) to see the live demo
 
+If you find a bug or great idea about this app, feel free to contact [me](https://www.linkedin.com/in/dh-kim-733227200/)
+
 <br/>
 
 ## Index
@@ -87,6 +89,18 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 
 ### What did i use here?
 
+- Development STACK
+
+ <br/>
+ 
+   <div>
+    <img src="https://www.acwebdev.tech/static/media/react-icon.52610ecf.png" width="100">
+    <img src="https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png" width="100">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbdjy4HpplGW-RqVYTAB5dEZ18l4jdj07HcA&usqp=CAU" width="100">
+  </div>
+
+<br/>
+
 - NPM package
 
   1. [marked](https://www.npmjs.com/package/marked) (preview section)  
@@ -105,7 +119,3 @@ I named this app as Markdown - Everywhere since i wanted to users write markdown
 
   1. localStorage  
      For better user experience, this app has to remember user's current settings like size and theme and text that users wrote in the code editor. So i implemented localStorage and put these data into it.
-
-- react-router
-
-  every time user changes topic, route is changed and only aside component is rerendered so that code and preview section to be remained. Thought this would be great for user experience. If they forget something they can easily go back to any topic without code deleting.
